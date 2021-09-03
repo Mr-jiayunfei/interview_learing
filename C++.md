@@ -237,8 +237,8 @@ public:
 			//将原来的引用计数减一
 			(*this->_count)--;
 			if (this->_count == 0) {
-				delete this->_ptr;
-				delete this->_count;
+				delete this->m_ptr;
+				delete this->m_count;
 			}
 		}
 	
